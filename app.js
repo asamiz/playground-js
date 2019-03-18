@@ -53,8 +53,8 @@
 //#endregion
 
 //#region  reversing string "immutable type" by using arrays!
-// var w = "hello";
+var w = "hello";
 
-// var c = Array.from(w).reverse();
-// console.log(c.join(""));
+var c = Array.from(w).reverse();
+console.log(c.join(""));
 //#endregion
