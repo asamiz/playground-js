@@ -1,2 +1,2 @@
 # Playground
-this is a playground to test features on JS!
+This is a playground to test features on JS!
