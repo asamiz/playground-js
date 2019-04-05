@@ -58,3 +58,56 @@
 // var c = Array.from(w).reverse();
 // console.log(c.join(""));
 //#endregion
+
+// shallow copy Vs. Deep Copy!
+//#region shallow copy
+// let arr = [1, 2, 3];
+// let arrCopied = arr;
+// arrCopied.push(4);
+// console.log(arr, arrCopied);
+//#endregion
+
+// #region Deep Copy
+// let arr = [1, 2, 3];
+// let arrCopied = [...arr];
+// arrCopied.push(4);
+// console.log(arr, arrCopied);
+//#endregion
+
+//#region Spread operators
+// let arr = [1, 2, 3, 4, 5, 6];
+// const max = arr => {
+//   return Math.max(...arr);
+// };
+
+// console.log(max(arr));
+//#endregion
+
+//#region  Caalbacks
+
+// first let's see callBacks
+// const delay = (callback, duration) => {
+//   setTimeout(() => {
+//     callback();
+//   }, duration);
+// };
+
+// delay(() => {
+//   console.log("First Done!");
+// }, 500);
+
+// // this function will be executed before the first one!
+// delay(() => {
+//   console.log("second Done!");
+// }, 200);
+
+// To solve the problem we have to nest the function inside each other (callbackhell) or (DOOM)
+// delay(() => {
+//   console.log("First Done!");
+//   delay(() => {
+//     console.log("second Done!");
+//   }, 200);
+// }, 500);
+
+//#endregion
+
