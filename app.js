@@ -111,3 +111,46 @@
 
 //#endregion
 
+//#region  Don't forget to use Number.isNaN() not isNan
+// console.log(Number.isNaN("foo"));
+//#endregion
+
+//#region  JS has Infinity and -Infinity Values!
+// console.log(-1 / 0); // Infinity
+// console.log(-1 / 0); // Infinity
+// console.log(1 / -Infinity); // zero
+// console.log(1 / Infinity); // zero
+
+//#endregion
+
+//#region  HackerRank problems
+// ----------------1------------------
+// function compareTriplets(a, b) {
+//   var aliceScore = 0;
+//   var bobScore = 0;
+//   for (let i = 0; i < a.length; i++) {
+//     if (a[i] > b[i]) {
+//       aliceScore++;
+//     }
+//     if (b[i] > a[i]) {
+//       bobScore++;
+//     }
+//   }
+//   return [aliceScore, bobScore];
+// }
+// console.log(compareTriplets([5, 6, 7], [3, 6, 10]));
+
+// --------------------2-------------------
+
+function myFun() {
+  console.log(this);
+}
+
+myFun2 = () => {
+  console.log(this);
+};
+
+myFun();
+myFun2();
+
+//#endregion
